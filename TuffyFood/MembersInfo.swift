@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+//Project check in 1: Put your name here:
+struct Members {
+    var name: String
+    var year: String
+}
+
+//Daniel Truong
+var member1 = Members(name:"Daniel Truong", year: "Junior")
+
