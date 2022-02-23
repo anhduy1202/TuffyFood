@@ -17,4 +17,7 @@ struct Members {
 var member1 = Members(name:"Daniel Truong", year: "Junior")
 
 //Nicholas Chung
-var member2 = Members(name:"Nicholas Chung", year: "Sophmore")
+var member2 = Members(name:"Nicholas Chung", year: "Sophomore")
+
+//Justin Lieng
+var member3 = Members(name: "Nicholas Chung", year: "Sophomore")
