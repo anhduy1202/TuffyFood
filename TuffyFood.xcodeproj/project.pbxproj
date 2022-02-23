@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE371327C5A611006623B3 /* restaurantClass.swift */; };
+		7ACE371627C5AB3E006623B3 /* restaurantObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */; };
 		7AE6E56827C5586200438EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56727C5586200438EB3 /* AppDelegate.swift */; };
 		7AE6E56A27C5586200438EB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56927C5586200438EB3 /* SceneDelegate.swift */; };
 		7AE6E56C27C5586200438EB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56B27C5586200438EB3 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7ACE371327C5A611006623B3 /* restaurantClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantClass.swift; sourceTree = "<group>"; };
+		7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantObjects.swift; sourceTree = "<group>"; };
 		7AE6E56427C5586200438EB3 /* TuffyFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuffyFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE6E56727C5586200438EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE6E56927C5586200438EB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				7AE6E57027C5586400438EB3 /* Assets.xcassets */,
 				7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */,
 				7AE6E57527C5586400438EB3 /* Info.plist */,
+				7ACE371327C5A611006623B3 /* restaurantClass.swift */,
+				7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */,
 			);
 			path = TuffyFood;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 				7AE6E56C27C5586200438EB3 /* ViewController.swift in Sources */,
 				7AE6E56827C5586200438EB3 /* AppDelegate.swift in Sources */,
 				7AE6E56A27C5586200438EB3 /* SceneDelegate.swift in Sources */,
+				7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */,
+				7ACE371627C5AB3E006623B3 /* restaurantObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
