@@ -1,0 +1,6 @@
+framework module Pods_TuffyFood_TuffyFoodUITests {
+  umbrella header "Pods-TuffyFood-TuffyFoodUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

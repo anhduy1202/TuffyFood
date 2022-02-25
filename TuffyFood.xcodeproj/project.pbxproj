@@ -3,20 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B9F80BA0D61D66AF8BC67E5 /* Pods_TuffyFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477AB516EAF34E5A89BC24D3 /* Pods_TuffyFood.framework */; };
+		7A4A3A7F27C7F04700E0F6E0 /* MembersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A7D27C7F04700E0F6E0 /* MembersInfo.swift */; };
+		7A4A3A8027C7F04700E0F6E0 /* reviewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A7E27C7F04700E0F6E0 /* reviewClass.swift */; };
+		7A4A3A8227C7F92000E0F6E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */; };
+		7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */; };
+		7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */; };
+		7A4A3A8F27C8D61D00E0F6E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */; };
 		7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE371327C5A611006623B3 /* restaurantClass.swift */; };
 		7ACE371627C5AB3E006623B3 /* restaurantObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */; };
 		7AE6E56827C5586200438EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56727C5586200438EB3 /* AppDelegate.swift */; };
 		7AE6E56A27C5586200438EB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56927C5586200438EB3 /* SceneDelegate.swift */; };
-		7AE6E56C27C5586200438EB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56B27C5586200438EB3 /* ViewController.swift */; };
+		7AE6E56C27C5586200438EB3 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56B27C5586200438EB3 /* AuthController.swift */; };
 		7AE6E56F27C5586200438EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6E56D27C5586200438EB3 /* Main.storyboard */; };
 		7AE6E57127C5586400438EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6E57027C5586400438EB3 /* Assets.xcassets */; };
 		7AE6E57427C5586400438EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */; };
 		7AE6E57F27C5586500438EB3 /* TuffyFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E57E27C5586500438EB3 /* TuffyFoodTests.swift */; };
 		7AE6E58A27C5586500438EB3 /* TuffyFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E58927C5586500438EB3 /* TuffyFoodUITests.swift */; };
+		8D480C4845201917AD8CD492 /* Pods_TuffyFood_TuffyFoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B279C2F8B1E8D5462152002 /* Pods_TuffyFood_TuffyFoodUITests.framework */; };
+		E59A17E424B30106B6D19C31 /* Pods_TuffyFoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD32E206EACAE8FB33EBE2 /* Pods_TuffyFoodTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +46,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B279C2F8B1E8D5462152002 /* Pods_TuffyFood_TuffyFoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuffyFood_TuffyFoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		310EBD7BA2E9ACFA241C5AF0 /* Pods-TuffyFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood.release.xcconfig"; path = "Target Support Files/Pods-TuffyFood/Pods-TuffyFood.release.xcconfig"; sourceTree = "<group>"; };
+		383379B9C0129430614361CB /* Pods-TuffyFoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFoodTests.release.xcconfig"; path = "Target Support Files/Pods-TuffyFoodTests/Pods-TuffyFoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FBC5DA127024A21C50533AA /* Pods-TuffyFood-TuffyFoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood-TuffyFoodUITests.release.xcconfig"; path = "Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		477AB516EAF34E5A89BC24D3 /* Pods_TuffyFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuffyFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C74D8E7988385BB9C39706 /* Pods-TuffyFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFood/Pods-TuffyFood.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4A3A7D27C7F04700E0F6E0 /* MembersInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersInfo.swift; sourceTree = "<group>"; };
+		7A4A3A7E27C7F04700E0F6E0 /* reviewClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reviewClass.swift; sourceTree = "<group>"; };
+		7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceReviewsViewController.swift; sourceTree = "<group>"; };
+		7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7ACE371327C5A611006623B3 /* restaurantClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantClass.swift; sourceTree = "<group>"; };
 		7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantObjects.swift; sourceTree = "<group>"; };
 		7AE6E56427C5586200438EB3 /* TuffyFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuffyFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE6E56727C5586200438EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE6E56927C5586200438EB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AE6E56B27C5586200438EB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AE6E56B27C5586200438EB3 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		7AE6E56E27C5586200438EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AE6E57027C5586400438EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE6E57327C5586400438EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +74,9 @@
 		7AE6E58527C5586500438EB3 /* TuffyFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuffyFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE6E58927C5586500438EB3 /* TuffyFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuffyFoodUITests.swift; sourceTree = "<group>"; };
 		7AE6E58B27C5586500438EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCD32E206EACAE8FB33EBE2 /* Pods_TuffyFoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuffyFoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E637C27551529DD881D154E /* Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E45554F4E9D59B25CE8DC69B /* Pods-TuffyFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFoodTests.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFoodTests/Pods-TuffyFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9F80BA0D61D66AF8BC67E5 /* Pods_TuffyFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59A17E424B30106B6D19C31 /* Pods_TuffyFoodTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +100,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D480C4845201917AD8CD492 /* Pods_TuffyFood_TuffyFoodUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A4A3A8327C8C5B000E0F6E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AE6E56B27C5586200438EB3 /* AuthController.swift */,
+				7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */,
+				7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A4A3A8427C8C5BB00E0F6E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A3A7E27C7F04700E0F6E0 /* reviewClass.swift */,
+				7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */,
+				7ACE371327C5A611006623B3 /* restaurantClass.swift */,
+				7A4A3A7D27C7F04700E0F6E0 /* MembersInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A4A3A8527C8C5C100E0F6E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AE6E56727C5586200438EB3 /* AppDelegate.swift */,
+				7AE6E56927C5586200438EB3 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7A4A3A8627C8C5E800E0F6E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A3A8827C8C62200E0F6E0 /* Storyboards */,
+				7AE6E57027C5586400438EB3 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A4A3A8727C8C5F100E0F6E0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7A4A3A8827C8C62200E0F6E0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7AE6E56D27C5586200438EB3 /* Main.storyboard */,
+				7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7A4A3A8D27C8D60900E0F6E0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		7AE6E55B27C5586200438EB3 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +177,8 @@
 				7AE6E57D27C5586500438EB3 /* TuffyFoodTests */,
 				7AE6E58827C5586500438EB3 /* TuffyFoodUITests */,
 				7AE6E56527C5586200438EB3 /* Products */,
+				9D98979ABD731648F99AB34E /* Pods */,
+				A8A9BC58A67039ABC2C8893F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +195,14 @@
 		7AE6E56627C5586200438EB3 /* TuffyFood */ = {
 			isa = PBXGroup;
 			children = (
-				7AE6E56727C5586200438EB3 /* AppDelegate.swift */,
-				7AE6E56927C5586200438EB3 /* SceneDelegate.swift */,
-				7AE6E56B27C5586200438EB3 /* ViewController.swift */,
-				7AE6E56D27C5586200438EB3 /* Main.storyboard */,
-				7AE6E57027C5586400438EB3 /* Assets.xcassets */,
-				7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */,
+				7A4A3A8D27C8D60900E0F6E0 /* Helpers */,
+				7A4A3A8727C8C5F100E0F6E0 /* ViewModels */,
+				7A4A3A8627C8C5E800E0F6E0 /* Views */,
+				7A4A3A8527C8C5C100E0F6E0 /* Resources */,
+				7A4A3A8427C8C5BB00E0F6E0 /* Models */,
+				7A4A3A8327C8C5B000E0F6E0 /* Controllers */,
+				7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */,
 				7AE6E57527C5586400438EB3 /* Info.plist */,
-				7ACE371327C5A611006623B3 /* restaurantClass.swift */,
-				7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */,
 			);
 			path = TuffyFood;
 			sourceTree = "<group>";
@@ -134,6 +225,29 @@
 			path = TuffyFoodUITests;
 			sourceTree = "<group>";
 		};
+		9D98979ABD731648F99AB34E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48C74D8E7988385BB9C39706 /* Pods-TuffyFood.debug.xcconfig */,
+				310EBD7BA2E9ACFA241C5AF0 /* Pods-TuffyFood.release.xcconfig */,
+				9E637C27551529DD881D154E /* Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig */,
+				3FBC5DA127024A21C50533AA /* Pods-TuffyFood-TuffyFoodUITests.release.xcconfig */,
+				E45554F4E9D59B25CE8DC69B /* Pods-TuffyFoodTests.debug.xcconfig */,
+				383379B9C0129430614361CB /* Pods-TuffyFoodTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8A9BC58A67039ABC2C8893F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				477AB516EAF34E5A89BC24D3 /* Pods_TuffyFood.framework */,
+				1B279C2F8B1E8D5462152002 /* Pods_TuffyFood_TuffyFoodUITests.framework */,
+				7DCD32E206EACAE8FB33EBE2 /* Pods_TuffyFoodTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AE6E58E27C5586500438EB3 /* Build configuration list for PBXNativeTarget "TuffyFood" */;
 			buildPhases = (
+				2FE30E6537B2AFC4EB1A7B5F /* [CP] Check Pods Manifest.lock */,
 				7AE6E56027C5586200438EB3 /* Sources */,
 				7AE6E56127C5586200438EB3 /* Frameworks */,
 				7AE6E56227C5586200438EB3 /* Resources */,
+				3A5FA62DFE1971E20BF66C80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AE6E59127C5586500438EB3 /* Build configuration list for PBXNativeTarget "TuffyFoodTests" */;
 			buildPhases = (
+				77B2E1BB4509BE168C8845B0 /* [CP] Check Pods Manifest.lock */,
 				7AE6E57627C5586500438EB3 /* Sources */,
 				7AE6E57727C5586500438EB3 /* Frameworks */,
 				7AE6E57827C5586500438EB3 /* Resources */,
@@ -176,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AE6E59427C5586500438EB3 /* Build configuration list for PBXNativeTarget "TuffyFoodUITests" */;
 			buildPhases = (
+				5A811C3E45742F7E4762FC27 /* [CP] Check Pods Manifest.lock */,
 				7AE6E58127C5586500438EB3 /* Sources */,
 				7AE6E58227C5586500438EB3 /* Frameworks */,
 				7AE6E58327C5586500438EB3 /* Resources */,
+				E566B233203D9DD27EB1D42B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE6E57427C5586400438EB3 /* LaunchScreen.storyboard in Resources */,
+				7A4A3A8227C7F92000E0F6E0 /* GoogleService-Info.plist in Resources */,
 				7AE6E57127C5586400438EB3 /* Assets.xcassets in Resources */,
 				7AE6E56F27C5586200438EB3 /* Main.storyboard in Resources */,
 			);
@@ -259,15 +379,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FE30E6537B2AFC4EB1A7B5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuffyFood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A5FA62DFE1971E20BF66C80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuffyFood/Pods-TuffyFood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuffyFood/Pods-TuffyFood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuffyFood/Pods-TuffyFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A811C3E45742F7E4762FC27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuffyFood-TuffyFoodUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77B2E1BB4509BE168C8845B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TuffyFoodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E566B233203D9DD27EB1D42B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AE6E56027C5586200438EB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE6E56C27C5586200438EB3 /* ViewController.swift in Sources */,
+				7AE6E56C27C5586200438EB3 /* AuthController.swift in Sources */,
+				7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */,
+				7A4A3A7F27C7F04700E0F6E0 /* MembersInfo.swift in Sources */,
+				7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */,
 				7AE6E56827C5586200438EB3 /* AppDelegate.swift in Sources */,
+				7A4A3A8F27C8D61D00E0F6E0 /* Constants.swift in Sources */,
 				7AE6E56A27C5586200438EB3 /* SceneDelegate.swift in Sources */,
 				7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */,
+				7A4A3A8027C7F04700E0F6E0 /* reviewClass.swift in Sources */,
 				7ACE371627C5AB3E006623B3 /* restaurantObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +669,7 @@
 		};
 		7AE6E58F27C5586500438EB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C74D8E7988385BB9C39706 /* Pods-TuffyFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +688,7 @@
 		};
 		7AE6E59027C5586500438EB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310EBD7BA2E9ACFA241C5AF0 /* Pods-TuffyFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +707,7 @@
 		};
 		7AE6E59227C5586500438EB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E45554F4E9D59B25CE8DC69B /* Pods-TuffyFoodTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +729,7 @@
 		};
 		7AE6E59327C5586500438EB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 383379B9C0129430614361CB /* Pods-TuffyFoodTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +751,7 @@
 		};
 		7AE6E59527C5586500438EB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E637C27551529DD881D154E /* Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +771,7 @@
 		};
 		7AE6E59627C5586500438EB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FBC5DA127024A21C50533AA /* Pods-TuffyFood-TuffyFoodUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
