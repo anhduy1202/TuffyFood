@@ -19,8 +19,8 @@ class restaurant {
         self.location = location
         self.priceRating = priceRating
     }
-    func allInfo(){
-        print("\(title)'s hours are \(hours), and they can be found at \(location) with the price rating of \(priceRating)/3 $")
+    var allInfo: String{
+        return "\(title)'s hours are \(hours), and they can be found at \(location) with the price rating of \(priceRating) out of $$$"
     }
     func titlePrint(){
         print("\(title)")
