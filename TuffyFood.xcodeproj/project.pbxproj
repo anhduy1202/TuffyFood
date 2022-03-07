@@ -14,16 +14,18 @@
 		7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */; };
 		7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */; };
 		7A4A3A8F27C8D61D00E0F6E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */; };
+		7A6FC64927D561B100DA36A5 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FC64827D561B100DA36A5 /* welcomeViewController.swift */; };
+		7A6FC64B27D5726700DA36A5 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FC64A27D5726700DA36A5 /* logInViewController.swift */; };
 		7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE371327C5A611006623B3 /* restaurantClass.swift */; };
 		7ACE371627C5AB3E006623B3 /* restaurantObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */; };
 		7AE6E56827C5586200438EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56727C5586200438EB3 /* AppDelegate.swift */; };
 		7AE6E56A27C5586200438EB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56927C5586200438EB3 /* SceneDelegate.swift */; };
-		7AE6E56C27C5586200438EB3 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E56B27C5586200438EB3 /* AuthController.swift */; };
 		7AE6E56F27C5586200438EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6E56D27C5586200438EB3 /* Main.storyboard */; };
 		7AE6E57127C5586400438EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6E57027C5586400438EB3 /* Assets.xcassets */; };
 		7AE6E57427C5586400438EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */; };
 		7AE6E57F27C5586500438EB3 /* TuffyFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E57E27C5586500438EB3 /* TuffyFoodTests.swift */; };
 		7AE6E58A27C5586500438EB3 /* TuffyFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E58927C5586500438EB3 /* TuffyFoodUITests.swift */; };
+		7AEB701227D5AC0F00EF870B /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB701127D5AC0F00EF870B /* registerViewController.swift */; };
 		8D480C4845201917AD8CD492 /* Pods_TuffyFood_TuffyFoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B279C2F8B1E8D5462152002 /* Pods_TuffyFood_TuffyFoodUITests.framework */; };
 		E59A17E424B30106B6D19C31 /* Pods_TuffyFoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD32E206EACAE8FB33EBE2 /* Pods_TuffyFoodTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,12 +60,13 @@
 		7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceReviewsViewController.swift; sourceTree = "<group>"; };
 		7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7A6FC64827D561B100DA36A5 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
+		7A6FC64A27D5726700DA36A5 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		7ACE371327C5A611006623B3 /* restaurantClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantClass.swift; sourceTree = "<group>"; };
 		7ACE371527C5AB3E006623B3 /* restaurantObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantObjects.swift; sourceTree = "<group>"; };
 		7AE6E56427C5586200438EB3 /* TuffyFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuffyFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE6E56727C5586200438EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE6E56927C5586200438EB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AE6E56B27C5586200438EB3 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		7AE6E56E27C5586200438EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AE6E57027C5586400438EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE6E57327C5586400438EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		7AE6E58527C5586500438EB3 /* TuffyFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuffyFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE6E58927C5586500438EB3 /* TuffyFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuffyFoodUITests.swift; sourceTree = "<group>"; };
 		7AE6E58B27C5586500438EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AEB701127D5AC0F00EF870B /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		7DCD32E206EACAE8FB33EBE2 /* Pods_TuffyFoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuffyFoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E637C27551529DD881D154E /* Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E45554F4E9D59B25CE8DC69B /* Pods-TuffyFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFoodTests.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFoodTests/Pods-TuffyFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,9 +114,11 @@
 		7A4A3A8327C8C5B000E0F6E0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7AE6E56B27C5586200438EB3 /* AuthController.swift */,
+				7A6FC64827D561B100DA36A5 /* welcomeViewController.swift */,
 				7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */,
 				7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */,
+				7A6FC64A27D5726700DA36A5 /* logInViewController.swift */,
+				7AEB701127D5AC0F00EF870B /* registerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				7A4A3A8827C8C62200E0F6E0 /* Storyboards */,
-				7AE6E57027C5586400438EB3 /* Assets.xcassets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				7A4A3A8327C8C5B000E0F6E0 /* Controllers */,
 				7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */,
 				7AE6E57527C5586400438EB3 /* Info.plist */,
+				7AE6E57027C5586400438EB3 /* Assets.xcassets */,
 			);
 			path = TuffyFood;
 			sourceTree = "<group>";
@@ -487,13 +493,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE6E56C27C5586200438EB3 /* AuthController.swift in Sources */,
 				7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */,
 				7A4A3A7F27C7F04700E0F6E0 /* MembersInfo.swift in Sources */,
 				7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */,
+				7A6FC64B27D5726700DA36A5 /* logInViewController.swift in Sources */,
 				7AE6E56827C5586200438EB3 /* AppDelegate.swift in Sources */,
+				7AEB701227D5AC0F00EF870B /* registerViewController.swift in Sources */,
 				7A4A3A8F27C8D61D00E0F6E0 /* Constants.swift in Sources */,
 				7AE6E56A27C5586200438EB3 /* SceneDelegate.swift in Sources */,
+				7A6FC64927D561B100DA36A5 /* welcomeViewController.swift in Sources */,
 				7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */,
 				7A4A3A8027C7F04700E0F6E0 /* reviewClass.swift in Sources */,
 				7ACE371627C5AB3E006623B3 /* restaurantObjects.swift in Sources */,
@@ -674,6 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7857SMUZG;
 				INFOPLIST_FILE = TuffyFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,7 +691,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Group9.TuffyFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -693,6 +702,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7857SMUZG;
 				INFOPLIST_FILE = TuffyFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -701,7 +711,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Group9.TuffyFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
