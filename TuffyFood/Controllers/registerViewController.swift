@@ -38,7 +38,7 @@ class registerViewController: UIViewController {
                 return
             }
             //Transition to home screen after creating account
-            strongSelf.performSegue(withIdentifier: "goToHomeScreen", sender: strongSelf)
+            strongSelf.performSegue(withIdentifier: Constants.Storyboard.authSegue, sender: strongSelf)
         })
     }
     

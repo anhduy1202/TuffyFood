@@ -9,10 +9,20 @@ import UIKit
 
 class welcomeViewController: UIViewController {
 
+    @IBOutlet weak var tuffyLabel: UILabel!
     @IBAction func registerPressed(_ sender: UIButton) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tuffyLabel.text = ""
+        var charIdx = 0.0
+        let title = Constants.Storyboard.tuffyFood
+        for letter in title {
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIdx, repeats: false) { timer in
+                self.tuffyLabel.text?.append(letter)
+            }
+            charIdx+=1
+        }
         // Do any additional setup after loading the view.
     }
     

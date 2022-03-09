@@ -10,6 +10,7 @@ import FirebaseAuth
 
 
 class logInViewController: UIViewController {
+    var user = User()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +37,15 @@ class logInViewController: UIViewController {
                 return
             }
             //Transition to home screen if user, password correct
-            strongSelf.performSegue(withIdentifier: "goToHomeScreen", sender: strongSelf)
+            strongSelf.performSegue(withIdentifier: Constants.Storyboard.authSegue, sender: strongSelf)
         })
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        user.email = emailField.text
+        if segue.identifier == Constants.Storyboard.authSegue {
+            let destinationVC = segue.destination as! HomeScreenViewController
+            destinationVC.email = user.email
+        }
     }
 }
