@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yFz-SW-dtE">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,20 +14,20 @@
             <objects>
                 <viewController storyboardIdentifier="LogInVC" id="awU-8i-P9n" customClass="logInViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZwX-Ks-3zC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltz-1O-A8V">
-                                <rect key="frame" x="131.66666666666666" y="107.99999999999999" width="112" height="44.333333333333329"/>
+                                <rect key="frame" x="151" y="108" width="112" height="44.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="34"/>
                                 <color key="textColor" red="0.26666668059999998" green="0.69019609689999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="WVX-24-5ox">
-                                <rect key="frame" x="87.666666666666686" y="175" width="200" height="175"/>
+                                <rect key="frame" x="107" y="175" width="200" height="175"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DM-iS-5ny">
-                                        <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="34"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-31-Xed">
-                                        <rect key="frame" x="0.0" y="94" width="89.333333333333329" height="34"/>
+                                        <rect key="frame" x="0.0" y="94" width="89.5" height="34"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -59,7 +59,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKq-vt-1vs">
-                                <rect key="frame" x="137.66666666666666" y="379" width="100" height="35"/>
+                                <rect key="frame" x="157" y="379" width="100" height="35"/>
                                 <color key="backgroundColor" name="TuffyBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="gGu-dC-ORV"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="621-Cx-fz9">
-                                <rect key="frame" x="187.66666666666666" y="434" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="434" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
@@ -115,21 +115,44 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="NVk-1S-XyW" customClass="HomeScreenViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VK0-jC-JAC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Screen" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX5-Cm-YxR">
-                                <rect key="frame" x="137" y="433" width="140" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX5-Cm-YxR">
+                                <rect key="frame" x="137" y="433.5" width="140" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixb-rf-BHV">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="I2s-x0-9lk"/>
+                                    <tabBarItem title="Profile" image="person.fill" catalog="system" id="PIS-wB-whB">
+                                        <color key="badgeColor" red="0.0" green="0.7019608021" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Iy-C0-hrA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FX5-Cm-YxR" firstAttribute="centerX" secondItem="VK0-jC-JAC" secondAttribute="centerX" id="NhY-bk-M8e"/>
+                            <constraint firstItem="FX5-Cm-YxR" firstAttribute="centerY" secondItem="VK0-jC-JAC" secondAttribute="centerY" id="fdG-Ge-Y6M"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kVn-cO-EF7"/>
+                    <navigationItem key="navigationItem" id="kVn-cO-EF7">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="8rp-Ny-hQW">
+                            <connections>
+                                <action selector="logOutPressed:" destination="NVk-1S-XyW" id="aTq-Uc-oZC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileButton" destination="PIS-wB-whB" id="kvO-bh-x9T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xui-I4-NPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,20 +163,20 @@
             <objects>
                 <viewController id="II6-J3-RPv" customClass="welcomeViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E5d-Oo-Pfg" customClass="welcome">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Fs5-gN-npx">
-                                <rect key="frame" x="54.333333333333343" y="98" width="266.33333333333326" height="95.666666666666686"/>
+                                <rect key="frame" x="97.5" y="98" width="219.5" height="82.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TuffyFood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ef-vR-dGv">
-                                        <rect key="frame" x="0.0" y="0.0" width="266.33333333333331" height="65"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                                        <rect key="frame" x="3" y="0.0" width="213" height="52"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
                                         <color key="textColor" red="0.38823530080000002" green="0.68235301969999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food review app for Titans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABp-Ts-fJJ">
-                                        <rect key="frame" x="23.666666666666671" y="72" width="219.33333333333331" height="23.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="59" width="219.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -161,15 +184,15 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-Dg-ojd">
-                                <rect key="frame" x="97.666666666666686" y="243.66666666666663" width="180" height="130"/>
+                                <rect key="frame" x="117" y="230.5" width="180" height="126"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apq-ax-pWH">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="51"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="49"/>
                                         <color key="backgroundColor" red="0.71470329954649325" green="0.86526055870362795" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="DOr-Qv-F9I"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="28"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" red="0.26666668059999998" green="0.69019609689999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -184,12 +207,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bA-B9-zBH">
-                                        <rect key="frame" x="0.0" y="79.000000000000028" width="180" height="51"/>
+                                        <rect key="frame" x="0.0" y="77" width="180" height="49"/>
                                         <color key="backgroundColor" red="0.38823530080000002" green="0.68235301969999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="HdG-fm-5bk"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="28"/>
                                         <state key="normal" title="Log in">
                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
@@ -215,6 +238,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qUD-CX-gqv"/>
+                    <connections>
+                        <outlet property="tuffyLabel" destination="0Ef-vR-dGv" id="v3F-id-lBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvg-yi-Rw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,44 +251,29 @@
             <objects>
                 <viewController id="DFJ-3c-qEi" customClass="registerViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7AM-pI-1pY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-9o-GoH">
-                                <rect key="frame" x="87.666666666666686" y="97.999999999999972" width="200" height="359.33333333333326"/>
+                                <rect key="frame" x="107" y="98" width="200" height="274.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGo-Rl-HH0">
-                                        <rect key="frame" x="25.666666666666657" y="0.0" width="148.66666666666666" height="44.333333333333336"/>
+                                        <rect key="frame" x="26" y="0.0" width="148.5" height="44.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="34"/>
                                         <color key="textColor" name="TuffyBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="pbc-YK-E7Y">
-                                        <rect key="frame" x="0.0" y="62.333333333333343" width="200" height="244.00000000000003"/>
+                                        <rect key="frame" x="0.0" y="62.5" width="200" height="159"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFL-pL-uGd">
-                                                <rect key="frame" x="0.0" y="0.0" width="96.333333333333329" height="27.333333333333332"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyE-lR-8Bq">
-                                                <rect key="frame" x="0.0" y="39.333333333333314" width="200" height="34"/>
-                                                <color key="backgroundColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="acf-uE-prz"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4m-le-r6k">
-                                                <rect key="frame" x="0.0" y="85.333333333333314" width="51.666666666666664" height="27.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="27.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjY-pB-7eD">
-                                                <rect key="frame" x="0.0" y="124.66666666666666" width="200" height="34"/>
+                                                <rect key="frame" x="0.0" y="39.5" width="200" height="34"/>
                                                 <color key="backgroundColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="lNT-Cl-RLK"/>
@@ -271,13 +282,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAl-mc-aGk">
-                                                <rect key="frame" x="0.0" y="170.66666666666666" width="89.333333333333329" height="27.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="85.5" width="89.5" height="27.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-dk-no7">
-                                                <rect key="frame" x="0.0" y="209.99999999999997" width="200" height="34"/>
+                                                <rect key="frame" x="0.0" y="125" width="200" height="34"/>
                                                 <color key="backgroundColor" red="0.67450982329999998" green="0.87058818339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="om0-2R-O0b"/>
@@ -288,7 +299,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0j-6o-anC">
-                                        <rect key="frame" x="49.999999999999986" y="324.33333333333331" width="100.00000000000001" height="35"/>
+                                        <rect key="frame" x="50" y="239.5" width="100" height="35"/>
                                         <color key="backgroundColor" name="TuffyBlue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6Ic-AX-YfW"/>
@@ -309,7 +320,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZW-I9-Oum">
-                                <rect key="frame" x="187.66666666666666" y="477.33333333333331" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="392.5" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
@@ -329,7 +340,6 @@
                         <outlet property="emailField" destination="cjY-pB-7eD" id="0Px-Sx-YqX"/>
                         <outlet property="errorMsg" destination="gZW-I9-Oum" id="YQn-MP-tVw"/>
                         <outlet property="passwordField" destination="b0a-dk-no7" id="20N-3i-uE0"/>
-                        <outlet property="usernameField" destination="iyE-lR-8Bq" id="Y5K-XK-qby"/>
                         <segue destination="NVk-1S-XyW" kind="show" identifier="goToHomeScreen" id="E3q-Hy-a4b"/>
                     </connections>
                 </viewController>
@@ -343,7 +353,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yFz-SW-dtE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FtC-TD-jCC">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -360,6 +370,8 @@
         <segue reference="E3q-Hy-a4b"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="TuffyBlue">
             <color red="0.38699999451637268" green="0.68400001525878906" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
