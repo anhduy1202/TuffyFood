@@ -1,0 +1,45 @@
+//
+//  ReviewClassTests.swift
+//  TuffyFoodTests
+//
+//  Created by csuftitan on 3/9/22.
+//
+
+import Foundation
+import XCTest
+@testable import TuffyFood
+
+class ReviewClassTests: XCTestCase {
+    
+    override func setUpWithError() throws {
+        
+    }
+    
+    override func tearDownWithError() throws {
+
+    }
+    
+    func testDisplayReview() {
+        let justinsReview = Reviews(name: "Justin", comment: "Panda Express is so good!", rating: 4.5, anonymousCheck: false)
+        
+        XCTAssertEqual(justinsReview.review, "Justin gives a 4.5 rating and says Panda Express is so good!")
+    }
+    
+    func testAnonymous() {
+        let justinsReview = Reviews(name: "Justin", comment: "Panda Express is so good!", rating: 4.5, anonymousCheck: true)
+        
+        XCTAssertEqual(justinsReview.name, "Anonymous")
+    }
+    
+    func testRating() {
+        let justinsReview = Reviews(name: "Justin", comment: "Panda Express is so good!", rating: 4.5, anonymousCheck: true)
+        
+        XCTAssertEqual(justinsReview.rating, 4.5)
+    }
+    
+    func testComment() {
+        let justinsReview = Reviews(name: "Justin", comment: "Panda Express is so good!", rating: 4.5, anonymousCheck: true)
+        
+        XCTAssertEqual(justinsReview.comment, "Panda Express is so good!")
+    }
+}
