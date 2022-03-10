@@ -7,15 +7,13 @@
 
 import UIKit
 import FirebaseAuth
-import Firebase
+
 
 //This view controller responsible to display all places
 class HomeScreenViewController: UIViewController {
     var email: String? //User email
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseApp.configure()
-        
         title = Constants.Storyboard.homeTitle
         navigationItem.hidesBackButton = true
     }
