@@ -14,6 +14,8 @@
 		7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */; };
 		7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */; };
 		7A4A3A8F27C8D61D00E0F6E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */; };
+		7A51B40A27DF115600D141FD /* foodPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51B40827DF115600D141FD /* foodPlaceCell.swift */; };
+		7A51B40B27DF115600D141FD /* foodPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A51B40927DF115600D141FD /* foodPlaceCell.xib */; };
 		7A6FC64927D561B100DA36A5 /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FC64827D561B100DA36A5 /* welcomeViewController.swift */; };
 		7A6FC64B27D5726700DA36A5 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FC64A27D5726700DA36A5 /* logInViewController.swift */; };
 		7AB1D4A327D8A8B000A73E04 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB1D4A227D8A8B000A73E04 /* User.swift */; };
@@ -61,6 +63,8 @@
 		7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceReviewsViewController.swift; sourceTree = "<group>"; };
 		7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7A51B40827DF115600D141FD /* foodPlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodPlaceCell.swift; sourceTree = "<group>"; };
+		7A51B40927DF115600D141FD /* foodPlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodPlaceCell.xib; sourceTree = "<group>"; };
 		7A6FC64827D561B100DA36A5 /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 		7A6FC64A27D5726700DA36A5 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		7AB1D4A227D8A8B000A73E04 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 			children = (
 				7AE6E56D27C5586200438EB3 /* Main.storyboard */,
 				7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */,
+				7A51B40827DF115600D141FD /* foodPlaceCell.swift */,
+				7A51B40927DF115600D141FD /* foodPlaceCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 				7AE6E57427C5586400438EB3 /* LaunchScreen.storyboard in Resources */,
 				7A4A3A8227C7F92000E0F6E0 /* GoogleService-Info.plist in Resources */,
 				7AE6E57127C5586400438EB3 /* Assets.xcassets in Resources */,
+				7A51B40B27DF115600D141FD /* foodPlaceCell.xib in Resources */,
 				7AE6E56F27C5586200438EB3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB1D4A327D8A8B000A73E04 /* User.swift in Sources */,
+				7A51B40A27DF115600D141FD /* foodPlaceCell.swift in Sources */,
 				7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */,
 				7A4A3A7F27C7F04700E0F6E0 /* MembersInfo.swift in Sources */,
 				7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */,

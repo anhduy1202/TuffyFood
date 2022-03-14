@@ -12,7 +12,7 @@ class welcomeViewController: UIViewController {
     @IBOutlet weak var tuffyLabel: UILabel!
     @IBAction func registerPressed(_ sender: UIButton) {
     }
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         tuffyLabel.text = ""
