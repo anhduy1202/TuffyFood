@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusableCell" rowHeight="204" id="KGk-i7-Jjw" customClass="foodPlaceCell" customModule="TuffyFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ohg-Pl-jd6">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="124"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="yqe-Ib-Yfc">
+                                <rect key="frame" x="10" y="20" width="305" height="103"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hwt-ZG-Uek">
+                                        <rect key="frame" x="0.0" y="-8" width="119.5" height="101"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zrg-Tf-UUY">
+                                        <rect key="frame" x="129.5" y="-8" width="175.5" height="71.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pollak Library Starbucks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZk-Q4-58d">
+                                                <rect key="frame" x="0.0" y="0.0" width="175.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175.5" id="BQn-ZR-6O9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="when this text got super long " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-Km-fVL">
+                                                <rect key="frame" x="0.0" y="29" width="175.5" height="18.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="175.5" id="f7A-dC-aUK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvJ-Ha-R1a">
+                                                <rect key="frame" x="0.0" y="55.5" width="21.5" height="16"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144.5" id="Jv7-MH-gNc"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="I0C-zX-rZf"/>
+                                    <constraint firstItem="Hwt-ZG-Uek" firstAttribute="top" secondItem="yqe-Ib-Yfc" secondAttribute="top" constant="10" id="Nz7-38-Y9N"/>
+                                    <constraint firstAttribute="width" constant="305" id="PdS-Ju-lhP"/>
+                                    <constraint firstItem="Zrg-Tf-UUY" firstAttribute="leading" secondItem="Hwt-ZG-Uek" secondAttribute="trailing" constant="10" id="eeA-3M-mDj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hwt-ZG-Uek" secondAttribute="bottom" constant="10" id="z2d-F7-Tcw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="yqe-Ib-Yfc" firstAttribute="leading" secondItem="Ohg-Pl-jd6" secondAttribute="leading" constant="10" id="4Gc-0E-tnz"/>
+                            <constraint firstItem="yqe-Ib-Yfc" firstAttribute="top" secondItem="Ohg-Pl-jd6" secondAttribute="top" constant="20" id="S3X-t6-C7d"/>
+                            <constraint firstAttribute="trailing" secondItem="yqe-Ib-Yfc" secondAttribute="trailing" constant="10" id="Ubc-T9-VoD"/>
+                            <constraint firstAttribute="bottom" secondItem="yqe-Ib-Yfc" secondAttribute="bottom" constant="10" id="m1r-NL-Lh8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray5Color"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="locationTitle" destination="T8W-Km-fVL" id="hsY-2q-ekq"/>
+                <outlet property="placeImage" destination="Hwt-ZG-Uek" id="csR-41-Lj0"/>
+                <outlet property="placeTitle" destination="vZk-Q4-58d" id="lXk-2s-Ecb"/>
+                <outlet property="ratingTitle" destination="wvJ-Ha-R1a" id="GCQ-os-AGb"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

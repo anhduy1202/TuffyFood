@@ -11,6 +11,9 @@ struct Constants {
     struct Storyboard {
       static let tuffyFood = "TuffyFood 🍕"
       static let homeTitle = "Home"
+      static let foodCellId = "reusableCell"
+      static let foodCell = "foodCell"
+      static let foodNibName = "foodPlaceCell"
       static let authSegue = "goToHomeScreen"
     }
 }
