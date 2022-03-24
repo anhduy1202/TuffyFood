@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yFz-SW-dtE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yFz-SW-dtE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -74,7 +75,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="loginPressed:" destination="awU-8i-P9n" eventType="touchUpInside" id="Pyc-GP-ahH"/>
+                                    <segue destination="baX-8J-Xq9" kind="show" id="03V-e4-FIE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="621-Cx-fz9">
@@ -103,14 +104,13 @@
                         <outlet property="emailField" destination="FGQ-EU-1fd" id="rEr-tk-VLX"/>
                         <outlet property="errorMsg" destination="621-Cx-fz9" id="Uqt-RR-85l"/>
                         <outlet property="passwordField" destination="eGA-4V-HCB" id="FYd-WY-XDr"/>
-                        <segue destination="NVk-1S-XyW" kind="show" identifier="goToHomeScreen" id="93n-35-zZi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Sa-nE-fFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2835" y="-380"/>
         </scene>
-        <!--Home Screen View Controller-->
+        <!--Home-->
         <scene sceneID="iSU-HT-JMo">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="NVk-1S-XyW" customClass="HomeScreenViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,19 +118,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ixb-rf-BHV">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="I2s-x0-9lk"/>
-                                    <tabBarItem title="Profile" image="person.fill" catalog="system" id="PIS-wB-whB">
-                                        <color key="badgeColor" red="0.0" green="0.7019608021" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </tabBarItem>
-                                </items>
-                            </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="124" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZUT-4O-H6p">
-                                <rect key="frame" x="0.0" y="88" width="414" height="644"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="561"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -138,6 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="9Iy-C0-hrA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="dTk-wY-X3u"/>
                     <navigationItem key="navigationItem" id="kVn-cO-EF7">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="8rp-Ny-hQW">
                             <connections>
@@ -146,13 +136,89 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="profileButton" destination="PIS-wB-whB" id="kvO-bh-x9T"/>
                         <outlet property="tableView" destination="ZUT-4O-H6p" id="N4b-iH-4ce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xui-I4-NPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3973.913043478261" y="24.776785714285712"/>
+            <point key="canvasLocation" x="5102.898550724638" y="-574.55357142857144"/>
+        </scene>
+        <!--Favorites Page View Controller-->
+        <scene sceneID="suB-2B-QiB">
+            <objects>
+                <viewController title="Favorites Page View Controller" id="9E4-8F-Avk" customClass="favoritesPageViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaP-VK-N0s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sAv-lm-NT4">
+                                <rect key="frame" x="43" y="193" width="328" height="586"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Favorite Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbq-hT-vnm">
+                                <rect key="frame" x="20" y="116" width="328" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" name="TuffyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="des-8A-MWr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="mKj-jq-Fzy"/>
+                    <connections>
+                        <outlet property="favoritesTableView" destination="sAv-lm-NT4" id="1dy-fj-vxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Occ-eG-Ugt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5102.898550724638" y="771.42857142857144"/>
+        </scene>
+        <!--Profile Page View Controller-->
+        <scene sceneID="S4B-Ft-18I">
+            <objects>
+                <viewController title="Profile Page View Controller" id="MIz-8L-9Gu" customClass="profilePageViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nry-sA-weX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j9-UH-WUA">
+                                <rect key="frame" x="20" y="107" width="340" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" name="TuffyBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTV-YR-N8h">
+                                <rect key="frame" x="54" y="250" width="47" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yay-uJ-n9B">
+                                <rect key="frame" x="20" y="163" width="296" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vvZ-UN-C9f"/>
+                        <color key="backgroundColor" red="1" green="0.89144005056725295" blue="0.71529171830170835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="ve9-Dl-Kul"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="mTV-YR-N8h" id="Aon-xh-aQ0"/>
+                        <outlet property="profileName" destination="4j9-UH-WUA" id="1XA-oP-fWA"/>
+                        <outlet property="yearLabel" destination="yay-uJ-n9B" id="c4c-f0-AeN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbu-NS-JOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5102.898550724638" y="91.741071428571431"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="qgN-zS-NHT">
@@ -310,7 +376,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="registerPressed:" destination="DFJ-3c-qEi" eventType="touchUpInside" id="qix-wY-3B2"/>
+                                            <segue destination="baX-8J-Xq9" kind="show" id="euO-ZI-9NK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -336,7 +402,6 @@
                         <outlet property="emailField" destination="cjY-pB-7eD" id="0Px-Sx-YqX"/>
                         <outlet property="errorMsg" destination="gZW-I9-Oum" id="YQn-MP-tVw"/>
                         <outlet property="passwordField" destination="b0a-dk-no7" id="20N-3i-uE0"/>
-                        <segue destination="NVk-1S-XyW" kind="show" identifier="goToHomeScreen" id="E3q-Hy-a4b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DoG-LD-dj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -361,13 +426,38 @@
             </objects>
             <point key="canvasLocation" x="976.81159420289862" y="24.776785714285712"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vcq-4p-742">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="baX-8J-Xq9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="lq0-ws-vkQ"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F5U-Uo-Zip">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NVk-1S-XyW" kind="relationship" relationship="viewControllers" id="Hkb-Uj-IaF"/>
+                        <segue destination="MIz-8L-9Gu" kind="relationship" relationship="viewControllers" id="WIq-WH-0hd"/>
+                        <segue destination="9E4-8F-Avk" kind="relationship" relationship="viewControllers" id="gGE-c1-tga"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPu-ly-7hH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3948" y="92"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="93n-35-zZi"/>
+        <segue reference="euO-ZI-9NK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="TuffyBlue">
             <color red="0.38699999451637268" green="0.68400001525878906" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
