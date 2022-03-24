@@ -10,4 +10,6 @@ import Foundation
 struct User {
     var email: String?
     var password: Any?
+    var favorites: [Int:restaurant] = [:]
+    var myReviews: [Int:Reviews] = [:]
 }
