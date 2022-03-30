@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3B9F80BA0D61D66AF8BC67E5 /* Pods_TuffyFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477AB516EAF34E5A89BC24D3 /* Pods_TuffyFood.framework */; };
+		7A31AB7227F4C6DC004EDAF7 /* Nick's Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A31AB7127F4C6DC004EDAF7 /* Nick's Storyboard.storyboard */; };
+		7A31AB7427F4C7DB004EDAF7 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31AB7327F4C7DB004EDAF7 /* MyTableViewController.swift */; };
+		7A31AB7627F4C846004EDAF7 /* MySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31AB7527F4C846004EDAF7 /* MySearchViewController.swift */; };
 		7A4A3A7F27C7F04700E0F6E0 /* MembersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A7D27C7F04700E0F6E0 /* MembersInfo.swift */; };
 		7A4A3A8027C7F04700E0F6E0 /* reviewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A7E27C7F04700E0F6E0 /* reviewClass.swift */; };
 		7A4A3A8227C7F92000E0F6E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */; };
@@ -59,6 +62,9 @@
 		3FBC5DA127024A21C50533AA /* Pods-TuffyFood-TuffyFoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood-TuffyFoodUITests.release.xcconfig"; path = "Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests.release.xcconfig"; sourceTree = "<group>"; };
 		477AB516EAF34E5A89BC24D3 /* Pods_TuffyFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuffyFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C74D8E7988385BB9C39706 /* Pods-TuffyFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFood/Pods-TuffyFood.debug.xcconfig"; sourceTree = "<group>"; };
+		7A31AB7127F4C6DC004EDAF7 /* Nick's Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Nick's Storyboard.storyboard"; sourceTree = "<group>"; };
+		7A31AB7327F4C7DB004EDAF7 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		7A31AB7527F4C846004EDAF7 /* MySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySearchViewController.swift; sourceTree = "<group>"; };
 		7A4A3A7D27C7F04700E0F6E0 /* MembersInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersInfo.swift; sourceTree = "<group>"; };
 		7A4A3A7E27C7F04700E0F6E0 /* reviewClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reviewClass.swift; sourceTree = "<group>"; };
 		7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -121,6 +127,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A31AB7027F4C6CA004EDAF7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				7A31AB7127F4C6DC004EDAF7 /* Nick's Storyboard.storyboard */,
+				7A31AB7327F4C7DB004EDAF7 /* MyTableViewController.swift */,
+				7A31AB7527F4C846004EDAF7 /* MySearchViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		7A4A3A8327C8C5B000E0F6E0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +190,7 @@
 		7A4A3A8827C8C62200E0F6E0 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				7A31AB7027F4C6CA004EDAF7 /* New Group */,
 				7AE6E56D27C5586200438EB3 /* Main.storyboard */,
 				7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */,
 				7A51B40827DF115600D141FD /* foodPlaceCell.swift */,
@@ -382,6 +399,7 @@
 				7AE6E57127C5586400438EB3 /* Assets.xcassets in Resources */,
 				7A51B40B27DF115600D141FD /* foodPlaceCell.xib in Resources */,
 				7AE6E56F27C5586200438EB3 /* Main.storyboard in Resources */,
+				7A31AB7227F4C6DC004EDAF7 /* Nick's Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +529,7 @@
 			files = (
 				7AB1D4A327D8A8B000A73E04 /* User.swift in Sources */,
 				7A7F3F9427ECDF6400DA20EB /* favoritesPageViewController.swift in Sources */,
+				7A31AB7627F4C846004EDAF7 /* MySearchViewController.swift in Sources */,
 				7A51B40A27DF115600D141FD /* foodPlaceCell.swift in Sources */,
 				7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */,
 				7A4A3A7F27C7F04700E0F6E0 /* MembersInfo.swift in Sources */,
@@ -523,6 +542,7 @@
 				7A6FC64927D561B100DA36A5 /* welcomeViewController.swift in Sources */,
 				7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */,
 				7A4A3A8027C7F04700E0F6E0 /* reviewClass.swift in Sources */,
+				7A31AB7427F4C7DB004EDAF7 /* MyTableViewController.swift in Sources */,
 				7A7F3F9227ECD6DD00DA20EB /* profilePageViewController.swift in Sources */,
 				7ACE371627C5AB3E006623B3 /* restaurantObjects.swift in Sources */,
 			);
