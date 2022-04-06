@@ -98,6 +98,6 @@ extension HomeScreenViewController: UITableViewDataSource {
 //When user interact with each cell (for food places detail feature)
 extension HomeScreenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        print(foodPlaces[indexPath.row].title!)
     }
 }
