@@ -15,5 +15,6 @@ struct Constants {
       static let foodCell = "foodCell"
       static let foodNibName = "foodPlaceCell"
       static let authSegue = "goToHomeScreen"
+      static let detailSegue = "goToDetail"
     }
 }

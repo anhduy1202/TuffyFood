@@ -8,10 +8,11 @@
 import UIKit
 
 class PlaceDetailViewController: UIViewController {
-
+    var placeTitle: String?
     override func viewDidLoad() {
+        print(placeTitle)
         super.viewDidLoad()
-
+        self.title = placeTitle
         // Do any additional setup after loading the view.
     }
     
