@@ -11,6 +11,11 @@ import FirebaseAuth
 
 class logInViewController: UIViewController {
     var user = User()
+    
+    var newRestaurantList: [myTestRestaurant] = [myTestRestaurant(name:"Panda", desc:"asian food"), myTestRestaurant(name:"Pieology", desc:"american food"), myTestRestaurant(name:"Sandwich", desc:"american food"), myTestRestaurant(name:"Ramen", desc:"asian food")]
+    
+    var segueTracker: myTestRestaurant!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,6 +51,13 @@ class logInViewController: UIViewController {
         if segue.identifier == Constants.Storyboard.authSegue {
             let destinationVC = segue.destination as! HomeScreenViewController
             destinationVC.email = user.email
+        }
+        //hehexd this next part needed for nick's stuff hehexd
+        //no touchy touchy
+        else if let addSegue = segue.destination as? MyTableViewController {
+            
+            addSegue.segueTracker = segueTracker
+            addSegue.newRestaurantList = newRestaurantList
         }
     }
 }

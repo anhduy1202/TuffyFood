@@ -10,8 +10,9 @@ import UIKit
 class MyTableViewController: UITableViewController {
 
     //var mobilelist=[[String: Any]]()
-    var newRestaurantList: [myTestRestaurant] = [myTestRestaurant(name:"Panda", desc:"asian food"), myTestRestaurant(name:"Pieology", desc:"american food"), myTestRestaurant(name:"Sandwich", desc:"american food"), myTestRestaurant(name:"Ramen", desc:"asian food")]// = ["Panda Express": "Open from 10am to 2pm ; Rated 4/5 ; Asian food", "Carl's Jr.": "Open from 8am to 4pm ; Rated 3/5 ; American food"]
-
+    //var newRestaurantList: [myTestRestaurant] = [myTestRestaurant(name:"Panda", desc:"asian food"), myTestRestaurant(name:"Pieology", desc:"american food"), myTestRestaurant(name:"Sandwich", desc:"american food"), myTestRestaurant(name:"Ramen", desc:"asian food")]// = ["Panda Express": "Open from 10am to 2pm ; Rated 4/5 ; Asian food", "Carl's Jr.": "Open from 8am to 4pm ; Rated 3/5 ; American food"]
+    var segueTracker: myTestRestaurant!
+    var newRestaurantList: [myTestRestaurant]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,16 +32,21 @@ class MyTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return newRestaurantList.count
+        return newRestaurantList!.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
-        print(newRestaurantList[indexPath.row])
+        print(newRestaurantList![indexPath.row])
         print(newRestaurantList)
         let cell:UITableViewCell?=tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text=newRestaurantList[indexPath.row].name
-        cell?.detailTextLabel?.text=newRestaurantList[indexPath.row].desc
+        //cell?.textLabel?.text=newRestaurantList[indexPath.row].name
+        //cell?.detailTextLabel?.text=newRestaurantList[indexPath.row].desc
+        if let list=newRestaurantList{
+            cell?.textLabel?.text=list[indexPath.row].name
+            cell?.detailTextLabel?.text=list[indexPath.row].desc
+        }
+        
         
         //newRestaurantList.reloadData()
         return cell!
@@ -70,4 +76,7 @@ class MyTableViewController: UITableViewController {
 //    }
 }
 
-
+func addToList(newName: String, description: String){
+    let newAddition = myTestRestaurant(name: newName, desc: description)
+    newResList.append(newAddition)
+}
