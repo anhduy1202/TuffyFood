@@ -13,6 +13,7 @@ import Firebase
 //This view controller responsible to display all places
 class HomeScreenViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    var user = User()
     var email: String? //User email
     var foodPlaces: [restaurant] = [] //We'll use this array to display food places
     let ref = Database.database().reference().child("foodPlaces")
