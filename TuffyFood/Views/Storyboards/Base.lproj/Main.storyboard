@@ -159,11 +159,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ZUT-4O-H6p" id="N4b-iH-4ce"/>
+                        <segue destination="dN6-zH-9lt" kind="show" identifier="goToDetail" id="NqY-cb-iaA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xui-I4-NPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5103" y="-575"/>
+            <point key="canvasLocation" x="5103" y="-579"/>
+        </scene>
+        <!--Place Detail-->
+        <scene sceneID="IFH-sr-blj">
+            <objects>
+                <viewController id="dN6-zH-9lt" customClass="PlaceDetailViewController" customModule="TuffyFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SHM-Ze-WYf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qsu-RA-Sk9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Place Detail" id="FLq-fa-vrs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46h-cu-yrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5933" y="-579"/>
         </scene>
         <!--Favorites Page View Controller-->
         <scene sceneID="suB-2B-QiB">

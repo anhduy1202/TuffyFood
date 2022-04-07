@@ -98,6 +98,14 @@ extension HomeScreenViewController: UITableViewDataSource {
 //When user interact with each cell (for food places detail feature)
 extension HomeScreenViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(foodPlaces[indexPath.row].title!)
+        self.performSegue(withIdentifier: Constants.Storyboard.detailSegue, sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? PlaceDetailViewController,  let indexPath = sender as? IndexPath {
+            destinationVC.placeTitle =  foodPlaces[indexPath.row].title
+        }
     }
 }
+
+
