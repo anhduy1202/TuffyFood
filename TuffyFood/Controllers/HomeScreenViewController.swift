@@ -103,7 +103,7 @@ extension HomeScreenViewController: UITableViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? PlaceDetailViewController,  let indexPath = sender as? IndexPath {
-            destinationVC.placeTitle =  foodPlaces[indexPath.row].title
+            destinationVC.placeData =  foodPlaces[indexPath.row]
         }
     }
 }
