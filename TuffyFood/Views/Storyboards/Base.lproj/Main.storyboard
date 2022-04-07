@@ -173,14 +173,33 @@
                     <view key="view" contentMode="scaleToFill" id="SHM-Ze-WYf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvantiMarket" translatesAutoresizingMaskIntoConstraints="NO" id="6mE-8X-4gP">
+                                <rect key="frame" x="0.0" y="95" width="414" height="231.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="PB1-Xz-g5s"/>
+                                    <constraint firstAttribute="width" constant="414" id="gtr-al-niN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qsu-RA-Sk9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6mE-8X-4gP" firstAttribute="top" secondItem="qsu-RA-Sk9" secondAttribute="top" id="3rU-80-ACD"/>
+                            <constraint firstItem="6mE-8X-4gP" firstAttribute="trailing" secondItem="qsu-RA-Sk9" secondAttribute="trailing" id="H9e-Nz-YKx"/>
+                            <constraint firstItem="6mE-8X-4gP" firstAttribute="leading" secondItem="qsu-RA-Sk9" secondAttribute="leading" id="P9K-Hz-NIb"/>
+                            <constraint firstItem="qsu-RA-Sk9" firstAttribute="bottom" secondItem="6mE-8X-4gP" secondAttribute="bottom" constant="528" id="TLV-Cy-opx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Place Detail" id="FLq-fa-vrs"/>
+                    <connections>
+                        <outlet property="coverPhoto" destination="6mE-8X-4gP" id="GiU-up-htA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46h-cu-yrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5933" y="-579"/>
+            <point key="canvasLocation" x="5931.884057971015" y="-579.24107142857144"/>
         </scene>
         <!--Favorites Page View Controller-->
         <scene sceneID="suB-2B-QiB">
@@ -491,6 +510,7 @@
         <segue reference="03V-e4-FIE"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="AvantiMarket" width="1024" height="768"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
