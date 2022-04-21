@@ -55,7 +55,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3T-6J-Uu7">
-                                                <rect key="frame" x="125" y="79.5" width="50.5" height="25"/>
+                                                <rect key="frame" x="0.0" y="79.5" width="175.5" height="25"/>
                                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,7 +68,7 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144.5" id="Jv7-MH-gNc"/>
-                                            <constraint firstItem="u3T-6J-Uu7" firstAttribute="leading" secondItem="Zrg-Tf-UUY" secondAttribute="leading" constant="125" id="fGE-kj-Fu8"/>
+                                            <constraint firstItem="u3T-6J-Uu7" firstAttribute="centerX" secondItem="Zrg-Tf-UUY" secondAttribute="centerX" id="eiO-LR-bhM"/>
                                             <constraint firstAttribute="trailing" secondItem="u3T-6J-Uu7" secondAttribute="trailing" id="wNn-7K-Sa2"/>
                                         </constraints>
                                     </stackView>

@@ -12,6 +12,7 @@ class PlaceDetailViewController: UIViewController {
     var placeData: restaurant?
     var placeImg: String?
     var rating: Int?
+
     @IBOutlet weak var star1: UILabel!
     @IBOutlet weak var star2: UILabel!
     @IBOutlet weak var star3: UILabel!
