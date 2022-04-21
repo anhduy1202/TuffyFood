@@ -224,6 +224,44 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XN3-aa-Op8">
+                                <rect key="frame" x="20" y="353.5" width="191.5" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="igq-Ju-upp">
+                                        <rect key="frame" x="0.0" y="0.5" width="32" height="31"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="28F-zR-gGr"/>
+                                            <constraint firstAttribute="height" constant="32" id="Tvu-k2-Ffe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food place address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gre-lP-ghk">
+                                        <rect key="frame" x="42" y="0.0" width="149.5" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uEl-c3-f3N">
+                                <rect key="frame" x="20" y="405" width="374" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bGY-7F-Fay">
+                                        <rect key="frame" x="0.0" y="0.5" width="32" height="31"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="1NQ-KB-53X"/>
+                                            <constraint firstAttribute="width" constant="32" id="NBk-pO-OW6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food operating hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zm3-W9-9YH">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qsu-RA-Sk9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -234,20 +272,27 @@
                             <constraint firstItem="6uV-EM-w3G" firstAttribute="top" secondItem="5yd-s1-Qp1" secondAttribute="bottom" constant="8" symbolic="YES" id="7Ix-LD-2sO"/>
                             <constraint firstItem="23k-nn-Uh3" firstAttribute="top" secondItem="qsu-RA-Sk9" secondAttribute="top" id="Ftb-xx-8Gd"/>
                             <constraint firstItem="6mE-8X-4gP" firstAttribute="trailing" secondItem="qsu-RA-Sk9" secondAttribute="trailing" id="H9e-Nz-YKx"/>
+                            <constraint firstItem="uEl-c3-f3N" firstAttribute="leading" secondItem="qsu-RA-Sk9" secondAttribute="leading" constant="20" id="IAB-LJ-YMk"/>
+                            <constraint firstItem="uEl-c3-f3N" firstAttribute="top" secondItem="XN3-aa-Op8" secondAttribute="bottom" constant="19.5" id="Lr7-9w-ATn"/>
                             <constraint firstItem="6uV-EM-w3G" firstAttribute="leading" secondItem="qsu-RA-Sk9" secondAttribute="leading" constant="20" id="NAW-z7-qna"/>
                             <constraint firstItem="6mE-8X-4gP" firstAttribute="leading" secondItem="qsu-RA-Sk9" secondAttribute="leading" id="P9K-Hz-NIb"/>
                             <constraint firstItem="qsu-RA-Sk9" firstAttribute="bottom" secondItem="6mE-8X-4gP" secondAttribute="bottom" constant="528" id="TLV-Cy-opx"/>
+                            <constraint firstItem="XN3-aa-Op8" firstAttribute="leading" secondItem="qsu-RA-Sk9" secondAttribute="leading" constant="20" id="UoY-tU-XWE"/>
                             <constraint firstItem="qsu-RA-Sk9" firstAttribute="trailing" secondItem="6uV-EM-w3G" secondAttribute="trailing" constant="267" id="VbT-sU-dyb"/>
                             <constraint firstItem="5yd-s1-Qp1" firstAttribute="top" secondItem="qsu-RA-Sk9" secondAttribute="top" constant="177" id="Wkm-GX-6bo"/>
                             <constraint firstItem="5yd-s1-Qp1" firstAttribute="leading" secondItem="qsu-RA-Sk9" secondAttribute="leading" constant="20" id="ZDt-DX-bw1"/>
                             <constraint firstItem="23k-nn-Uh3" firstAttribute="leading" secondItem="6mE-8X-4gP" secondAttribute="leading" id="Zoe-hp-f0k"/>
+                            <constraint firstItem="qsu-RA-Sk9" firstAttribute="trailing" secondItem="uEl-c3-f3N" secondAttribute="trailing" constant="20" id="bbl-lQ-ymd"/>
                             <constraint firstItem="qsu-RA-Sk9" firstAttribute="bottom" secondItem="5yd-s1-Qp1" secondAttribute="bottom" constant="565" id="czI-zv-d5A"/>
                             <constraint firstItem="qsu-RA-Sk9" firstAttribute="trailing" secondItem="5yd-s1-Qp1" secondAttribute="trailing" constant="20" id="iHY-3z-zJm"/>
+                            <constraint firstItem="XN3-aa-Op8" firstAttribute="top" secondItem="6mE-8X-4gP" secondAttribute="bottom" constant="19.5" id="mpc-tX-8fI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Place Detail" id="FLq-fa-vrs"/>
                     <connections>
+                        <outlet property="address" destination="gre-lP-ghk" id="aMk-9o-sUX"/>
                         <outlet property="coverPhoto" destination="6mE-8X-4gP" id="GiU-up-htA"/>
+                        <outlet property="hours" destination="zm3-W9-9YH" id="rHH-xS-i1i"/>
                         <outlet property="placeLabel" destination="5yd-s1-Qp1" id="Ctm-LN-6oR"/>
                         <outlet property="star1" destination="ugc-2k-obq" id="mtt-aw-04F"/>
                         <outlet property="star2" destination="B6G-78-FBU" id="LwV-Ot-j48"/>
@@ -580,7 +625,9 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AvantiMarket" width="1024" height="768"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="mappin.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">

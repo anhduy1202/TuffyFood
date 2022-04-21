@@ -18,6 +18,8 @@ class PlaceDetailViewController: UIViewController {
     @IBOutlet weak var star3: UILabel!
     @IBOutlet weak var star4: UILabel!
     @IBOutlet weak var star5: UILabel!
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var hours: UILabel!
     @IBOutlet weak var coverPhoto: UIImageView!
     var starArray = [UILabel]()
     override func viewDidLoad() {
@@ -40,7 +42,8 @@ class PlaceDetailViewController: UIViewController {
             }
             star.isHidden = false
         }
-        
+        hours.text = placeData?.hours
+        address.text = placeData?.location
         placeLabel.text = placeData?.title
         self.title = placeData?.title
         coverPhoto.loadFrom(URLAddress: placeData?.image ?? "")
