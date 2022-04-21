@@ -9,10 +9,15 @@ import UIKit
 
 class foodPlaceCell: UITableViewCell {
 
+ 
     @IBOutlet weak var placeTitle: UILabel!
     @IBOutlet weak var locationTitle: UILabel!
     @IBOutlet weak var ratingTitle: UILabel!
     @IBOutlet weak var placeImage: UIImageView!
+
+    @IBAction func addToFavorite(_ sender: Any) {
+        print(placeTitle.text!)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
