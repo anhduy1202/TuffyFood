@@ -54,6 +54,7 @@
                     </tableView>
                     <connections>
                         <outlet property="searchBar" destination="aDI-Fs-LQ2" id="kuf-yr-jMq"/>
+                        <outlet property="searcher" destination="aDI-Fs-LQ2" id="Vkv-gX-qUZ"/>
                         <outlet property="tbl" destination="1OE-6X-KRu" id="3Wb-4c-2KZ"/>
                     </connections>
                 </tableViewController>

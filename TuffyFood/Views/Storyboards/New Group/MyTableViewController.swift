@@ -11,6 +11,33 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating, UIS
     func updateSearchResults(for searchController: UISearchController) {
         print("xcode stinky!!!!! CRINGE!!!!!!!")
     }
+    @IBOutlet var searcher: UISearchBar!
+    
+    //attempt 79 START
+//    private var searchBarWrapperView: UIView!
+//
+//    private var _searchController: UISearchController!
+//
+//    override func viewDidAppear(_ animated: Bool) {
+//        tableView.frame = CGRect(x: 0, y: 64, width: tableView.frame.width, height: tableView.frame.height - 64)
+//
+//        _searchController = UISearchController(searchResultsController: nil)
+//        _searchController.dimsBackgroundDuringPresentation = false
+//        _searchController.searchBar.delegate = self
+//        _searchController.searchBar.sizeToFit()
+//
+//        searchBarWrapperView = UIView(frame: CGRect(x: 0, y: 30, width: tableView.frame.width, height: 44))
+//
+//        searchBarWrapperView.addSubview(_searchController.searchBar)
+//
+//        tableView.superview!.addSubview(searchBarWrapperView)
+//    }
+//
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        // filter the data for the search and then reload
+//        tableView.reloadData()
+//    }
+    //attempt 79 END
     
 
     //Attempt 4
@@ -38,7 +65,7 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating, UIS
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searcher.delegate = self
         //attempt 5 starts here
 //        let nib = UINib(nibName: "TableCell", bundle: nil)
 //           tableView.register(nib, forCellReuseIdentifier: tableViewCellIdentifier)
@@ -141,28 +168,28 @@ class MyTableViewController: UITableViewController, UISearchResultsUpdating, UIS
      filter table if search bar is used and full name of restaurant isnt given, like if you type in "in" when the restaurants in the list are "burger king", "in n out", "mcdonalds", etc
      
      */
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
 //        if filteredData.count == 0 {
 //            return
 //        }
-        print("WAKANDA FOREVA MY BRODAS")
         if searchText == "" || searchText == " " {
             print("There is nothing in the search bar")
             filteredData = newRestaurantList!
+            tableView.reloadData()
         }
         else {
+            filteredData.removeAll()
             for restaurant in newRestaurantList! {
                 if searchText != restaurant.name {
                     print("There is nothing that matches")
                 }
-                if searchText == restaurant.name {
+                if searchText == restaurant.name {//use prefix and $0.lowercase
                     filteredData.append(restaurant)
                     //self.filteredData.filt
                 }
             }
-            print("MEWOMEWOMWEOWMEOWMEWOMEWOEMWOMEWOMEWOMEWOE")
-            print(filteredData)
-            print("UWUWUWUWUWUWUWUWUWUUWUWUWUWUUWUWUWUWUUWUWUWUWUUW")
+            //print(filteredData)
             tableView.reloadData()
         }
         //filteredData = newRestaurantList!//this is here because we want the filtered data to be populated at least
