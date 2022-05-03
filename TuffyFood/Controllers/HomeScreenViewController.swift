@@ -32,7 +32,7 @@ class HomeScreenViewController: UIViewController {
                     if let foodPlace = value as? [String:Any] {
                         
                         //Create new object and append it to array
-                        let newFoodPlaces = restaurant(name: key , time: foodPlace["time"]! as! String, place: foodPlace["place"]! as! String, price: foodPlace["price"]! as! String, image: foodPlace["image"]! as! String, rating: foodPlace["rating"]! as! Int)
+                        let newFoodPlaces = restaurant(name: key , time: foodPlace["time"]! as! String, place: foodPlace["place"]! as! String, price: foodPlace["price"]! as! String, image: foodPlace["image"]! as! String, rating: String(foodPlace["rating"]! as! Int))
                         self.foodPlaces.append(newFoodPlaces)
                         
                         //Fetch the main thread
@@ -68,6 +68,8 @@ extension HomeScreenViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Storyboard.foodCellId, for: indexPath) as! foodPlaceCell
         
+        cell.logInVC = self
+
         //Loading image from URL
         let imageUrl = foodPlaces[indexPath.row].image ?? ""
         guard let url = URL(string: imageUrl) else {return cell}
@@ -107,6 +109,11 @@ extension HomeScreenViewController: UITableViewDelegate {
             destinationVC.placeData =  foodPlaces[indexPath.row]
         }
     }
+    
+    func updateFavorites() {
+        let fvc = self.tabBarController!.viewControllers?[2] as? favoritesPageViewController
+        if let table = fvc?.favoritesTableView {
+            table.reloadData()
+        }
+    }
 }
-
-

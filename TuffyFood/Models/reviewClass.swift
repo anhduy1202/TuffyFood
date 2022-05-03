@@ -4,11 +4,11 @@ class Reviews {
 
     var name: String
     var comment: String
-    var rating: Double
+    var rating: String
     var anonymousCheck: Bool
     var review: String
     
-    init(name: String, comment: String, rating: Double, anonymousCheck: Bool) {
+    init(name: String, comment: String, rating: String, anonymousCheck: Bool) {
         self.name = name
         self.comment = comment
         self.rating = rating

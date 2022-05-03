@@ -11,7 +11,7 @@ class PlaceDetailViewController: UIViewController {
     @IBOutlet weak var placeLabel: UILabel!
     var placeData: restaurant?
     var placeImg: String?
-    var rating: Int?
+    var rating: String?
 
     @IBOutlet weak var star1: UILabel!
     @IBOutlet weak var star2: UILabel!
@@ -37,7 +37,7 @@ class PlaceDetailViewController: UIViewController {
         self.rating = placeData?.rating
 
         for (index, star) in  starArray.enumerated() {
-            if (index == rating) {
+            if (index == Int(rating!)!) {
                 break;
             }
             star.isHidden = false
