@@ -323,31 +323,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sAv-lm-NT4">
-                                <rect key="frame" x="43" y="193" width="328" height="586"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sAv-lm-NT4">
+                                <rect key="frame" x="73" y="257" width="268" height="489"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favoritesCell" id="Pu6-0S-3h1">
-                                        <rect key="frame" x="0.0" y="44.5" width="328" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="268" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pu6-0S-3h1" id="RRb-4S-e0H">
-                                            <rect key="frame" x="0.0" y="0.0" width="328" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="268" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Favorite Restaurants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbq-hT-vnm">
-                                <rect key="frame" x="20" y="116" width="328" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favorite Restaurants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbq-hT-vnm">
+                                <rect key="frame" x="20" y="161" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" name="TuffyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="des-8A-MWr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="des-8A-MWr" firstAttribute="trailing" secondItem="sAv-lm-NT4" secondAttribute="trailing" constant="73" id="47A-k7-ZFO"/>
+                            <constraint firstItem="bbq-hT-vnm" firstAttribute="leading" secondItem="des-8A-MWr" secondAttribute="leading" constant="20" id="9wl-p1-9fB"/>
+                            <constraint firstItem="bbq-hT-vnm" firstAttribute="top" secondItem="des-8A-MWr" secondAttribute="top" constant="73" id="C3j-n4-HSL"/>
+                            <constraint firstItem="sAv-lm-NT4" firstAttribute="leading" secondItem="des-8A-MWr" secondAttribute="leading" constant="73" id="RMe-wy-iYs"/>
+                            <constraint firstItem="sAv-lm-NT4" firstAttribute="top" secondItem="bbq-hT-vnm" secondAttribute="bottom" constant="72" id="VJn-Sd-d72"/>
+                            <constraint firstItem="des-8A-MWr" firstAttribute="trailing" secondItem="bbq-hT-vnm" secondAttribute="trailing" constant="20" id="Ywp-do-ift"/>
+                            <constraint firstItem="des-8A-MWr" firstAttribute="bottom" secondItem="sAv-lm-NT4" secondAttribute="bottom" constant="67" id="Yz0-gu-wiO"/>
+                            <constraint firstItem="sAv-lm-NT4" firstAttribute="top" secondItem="bbq-hT-vnm" secondAttribute="bottom" constant="72" id="pPy-D7-Cvg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="mKj-jq-Fzy"/>
                     <connections>
@@ -373,8 +381,8 @@
                                 <color key="textColor" name="TuffyBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTV-YR-N8h">
-                                <rect key="frame" x="54" y="250" width="47" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTV-YR-N8h">
+                                <rect key="frame" x="20" y="251" width="198" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" name="AccentColor"/>
@@ -387,6 +395,13 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reviews: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cei-7e-V21">
+                                <rect key="frame" x="20" y="283" width="238" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vvZ-UN-C9f"/>
                         <color key="backgroundColor" red="1" green="0.89144005056725295" blue="0.71529171830170835" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -395,6 +410,7 @@
                     <connections>
                         <outlet property="emailLabel" destination="mTV-YR-N8h" id="Aon-xh-aQ0"/>
                         <outlet property="profileName" destination="4j9-UH-WUA" id="1XA-oP-fWA"/>
+                        <outlet property="reviewsLabel" destination="Cei-7e-V21" id="jbi-8U-mme"/>
                         <outlet property="yearLabel" destination="yay-uJ-n9B" id="c4c-f0-AeN"/>
                     </connections>
                 </viewController>

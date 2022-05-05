@@ -23,6 +23,7 @@
 		7A6FC64B27D5726700DA36A5 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FC64A27D5726700DA36A5 /* logInViewController.swift */; };
 		7A7F3F9227ECD6DD00DA20EB /* profilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F3F9127ECD6DD00DA20EB /* profilePageViewController.swift */; };
 		7A7F3F9427ECDF6400DA20EB /* favoritesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F3F9327ECDF6400DA20EB /* favoritesPageViewController.swift */; };
+		7A7F3F962821A44200DA20EB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F3F952821A44200DA20EB /* .gitignore */; };
 		7A9147C027FE58290058D78F /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9147BF27FE58290058D78F /* PlaceDetailViewController.swift */; };
 		7AB1D4A327D8A8B000A73E04 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB1D4A227D8A8B000A73E04 /* User.swift */; };
 		7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE371327C5A611006623B3 /* restaurantClass.swift */; };
@@ -78,6 +79,7 @@
 		7A6FC64A27D5726700DA36A5 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		7A7F3F9127ECD6DD00DA20EB /* profilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePageViewController.swift; sourceTree = "<group>"; };
 		7A7F3F9327ECDF6400DA20EB /* favoritesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesPageViewController.swift; sourceTree = "<group>"; };
+		7A7F3F952821A44200DA20EB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A9147BF27FE58290058D78F /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
 		7AB1D4A227D8A8B000A73E04 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7ACE371327C5A611006623B3 /* restaurantClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantClass.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		7AE6E55B27C5586200438EB3 = {
 			isa = PBXGroup;
 			children = (
+				7A7F3F952821A44200DA20EB /* .gitignore */,
 				7AE6E56627C5586200438EB3 /* TuffyFood */,
 				7AE6E57D27C5586500438EB3 /* TuffyFoodTests */,
 				7AE6E58827C5586500438EB3 /* TuffyFoodUITests */,
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE6E57427C5586400438EB3 /* LaunchScreen.storyboard in Resources */,
+				7A7F3F962821A44200DA20EB /* .gitignore in Resources */,
 				7A4A3A8227C7F92000E0F6E0 /* GoogleService-Info.plist in Resources */,
 				7AE6E57127C5586400438EB3 /* Assets.xcassets in Resources */,
 				7A51B40B27DF115600D141FD /* foodPlaceCell.xib in Resources */,

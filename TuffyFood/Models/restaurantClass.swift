@@ -11,11 +11,11 @@ class restaurant {
     var title: String?
     var hours: String?
     var location: String?
-    var rating: Int?
+    var rating: String?
     var priceRating: String?
     var image: String?
     
-    init(name title: String, time hours: String, place location: String, price priceRating: String, image: String, rating: Int) {
+    init(name title: String, time hours: String, place location: String, price priceRating: String, image: String, rating: String) {
         self.title = title
         self.image = image
         self.hours = hours
