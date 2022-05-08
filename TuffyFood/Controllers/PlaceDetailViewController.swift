@@ -6,13 +6,44 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class PlaceDetailViewController: UIViewController {
     @IBOutlet weak var placeLabel: UILabel!
     var placeData: restaurant?
     var placeImg: String?
     var rating: String?
-
+    var email: String = ""
+    var ref: DatabaseReference?
+ 
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBAction func ratingOnSlide(_ sender: UISlider) {
+        ratingLabel.text = "\(String(round(ratingSlider.value))) / 5"
+        self.rating = String(ratingSlider.value)
+    }
+    @IBOutlet weak var ratingSlider: UISlider!
+    @IBOutlet weak var openButton: UIButton!
+    
+    @IBOutlet weak var closeButton: UIButton!
+    @IBAction func showReview(_ sender: Any) {
+        reviewField.isHidden = false
+        openButton.isHidden = true
+        ratingSlider.isHidden = false
+        ratingLabel.isHidden = false
+        closeButton.isHidden = false
+        submitReviewBtn.isHidden = false
+    }
+    @IBAction func hideReview(_ sender: Any) {
+        reviewField.isHidden = true
+        ratingSlider.isHidden = true
+        ratingLabel.isHidden = true
+        openButton.isHidden = false
+        closeButton.isHidden = true
+        submitReviewBtn.isHidden = true
+    }
+    @IBOutlet weak var submitReviewBtn: UIButton!
+    @IBOutlet weak var reviewField: UITextView!
     @IBOutlet weak var star1: UILabel!
     @IBOutlet weak var star2: UILabel!
     @IBOutlet weak var star3: UILabel!
@@ -22,8 +53,34 @@ class PlaceDetailViewController: UIViewController {
     @IBOutlet weak var hours: UILabel!
     @IBOutlet weak var coverPhoto: UIImageView!
     var starArray = [UILabel]()
+    
+    @IBAction func postReview(_ sender: UIButton) {
+        let post = [
+            "author": email,
+            "content": reviewField.text!,
+            "rating": String(round(ratingSlider.value))
+        ] as [String : Any]
+        
+        ref!.setValue(post) {
+            (error:Error?, ref:DatabaseReference) in
+            if let error = error {
+              print("Data could not be saved: \(error).")
+            } else {
+              print("Data posted successfully!")
+                self.ratingLabel.text = "1.0/5"
+                self.ratingSlider.value = 1.0
+                self.reviewField.text = ""
+            }
+          }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.ref = Database.database().reference().child("foodPlaces").child((placeData?.title)!).child("reviews").childByAutoId()
+        closeButton.isHidden = true
+        reviewField.isHidden = true
+        ratingSlider.isHidden = true
+        ratingLabel.isHidden = true
+        submitReviewBtn.isHidden = true
         star1.isHidden = true
         star2.isHidden = true
         star3.isHidden = true
