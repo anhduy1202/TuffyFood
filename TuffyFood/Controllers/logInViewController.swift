@@ -50,7 +50,8 @@ class logInViewController: UIViewController {
         user.email = emailField.text
         if segue.identifier == Constants.Storyboard.authSegue {
             let destinationVC = segue.destination as! HomeScreenViewController
-            destinationVC.email = user.email
+            print(user.email!)
+            destinationVC.email = user.email!
         }
         //hehexd this next part needed for nick's stuff hehexd
         //no touchy touchy
