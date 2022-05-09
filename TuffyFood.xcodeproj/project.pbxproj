@@ -15,7 +15,6 @@
 		7A4A3A8027C7F04700E0F6E0 /* reviewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A7E27C7F04700E0F6E0 /* reviewClass.swift */; };
 		7A4A3A8227C7F92000E0F6E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */; };
 		7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */; };
-		7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */; };
 		7A4A3A8F27C8D61D00E0F6E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */; };
 		7A51B40A27DF115600D141FD /* foodPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A51B40827DF115600D141FD /* foodPlaceCell.swift */; };
 		7A51B40B27DF115600D141FD /* foodPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A51B40927DF115600D141FD /* foodPlaceCell.xib */; };
@@ -36,6 +35,8 @@
 		7AE6E57F27C5586500438EB3 /* TuffyFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E57E27C5586500438EB3 /* TuffyFoodTests.swift */; };
 		7AE6E58A27C5586500438EB3 /* TuffyFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE6E58927C5586500438EB3 /* TuffyFoodUITests.swift */; };
 		7AEB701227D5AC0F00EF870B /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB701127D5AC0F00EF870B /* registerViewController.swift */; };
+		7AFFD1F32828EDDB009648D2 /* reviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFFD1F12828EDDB009648D2 /* reviewTableViewCell.swift */; };
+		7AFFD1F42828EDDB009648D2 /* reviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFFD1F22828EDDB009648D2 /* reviewTableViewCell.xib */; };
 		8D480C4845201917AD8CD492 /* Pods_TuffyFood_TuffyFoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B279C2F8B1E8D5462152002 /* Pods_TuffyFood_TuffyFoodUITests.framework */; };
 		E59A17E424B30106B6D19C31 /* Pods_TuffyFoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD32E206EACAE8FB33EBE2 /* Pods_TuffyFoodTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,7 +72,6 @@
 		7A4A3A7E27C7F04700E0F6E0 /* reviewClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = reviewClass.swift; sourceTree = "<group>"; };
 		7A4A3A8127C7F92000E0F6E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceReviewsViewController.swift; sourceTree = "<group>"; };
 		7A4A3A8E27C8D61D00E0F6E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7A51B40827DF115600D141FD /* foodPlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodPlaceCell.swift; sourceTree = "<group>"; };
 		7A51B40927DF115600D141FD /* foodPlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodPlaceCell.xib; sourceTree = "<group>"; };
@@ -98,6 +98,8 @@
 		7AE6E58927C5586500438EB3 /* TuffyFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuffyFoodUITests.swift; sourceTree = "<group>"; };
 		7AE6E58B27C5586500438EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AEB701127D5AC0F00EF870B /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		7AFFD1F12828EDDB009648D2 /* reviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewTableViewCell.swift; sourceTree = "<group>"; };
+		7AFFD1F22828EDDB009648D2 /* reviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = reviewTableViewCell.xib; sourceTree = "<group>"; };
 		7DCD32E206EACAE8FB33EBE2 /* Pods_TuffyFoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuffyFoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E637C27551529DD881D154E /* Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFood-TuffyFoodUITests/Pods-TuffyFood-TuffyFoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E45554F4E9D59B25CE8DC69B /* Pods-TuffyFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuffyFoodTests.debug.xcconfig"; path = "Target Support Files/Pods-TuffyFoodTests/Pods-TuffyFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,7 +148,6 @@
 			children = (
 				7A6FC64827D561B100DA36A5 /* welcomeViewController.swift */,
 				7A4A3A8927C8CD6600E0F6E0 /* HomeScreenViewController.swift */,
-				7A4A3A8B27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift */,
 				7A6FC64A27D5726700DA36A5 /* logInViewController.swift */,
 				7AEB701127D5AC0F00EF870B /* registerViewController.swift */,
 				7A7F3F9127ECD6DD00DA20EB /* profilePageViewController.swift */,
@@ -200,6 +201,8 @@
 				7AE6E57227C5586400438EB3 /* LaunchScreen.storyboard */,
 				7A51B40827DF115600D141FD /* foodPlaceCell.swift */,
 				7A51B40927DF115600D141FD /* foodPlaceCell.xib */,
+				7AFFD1F12828EDDB009648D2 /* reviewTableViewCell.swift */,
+				7AFFD1F22828EDDB009648D2 /* reviewTableViewCell.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				7A4A3A8227C7F92000E0F6E0 /* GoogleService-Info.plist in Resources */,
 				7AE6E57127C5586400438EB3 /* Assets.xcassets in Resources */,
 				7A51B40B27DF115600D141FD /* foodPlaceCell.xib in Resources */,
+				7AFFD1F42828EDDB009648D2 /* reviewTableViewCell.xib in Resources */,
 				7AE6E56F27C5586200438EB3 /* Main.storyboard in Resources */,
 				7A31AB7227F4C6DC004EDAF7 /* Nick's Storyboard.storyboard in Resources */,
 			);
@@ -541,12 +545,12 @@
 				7A51B40A27DF115600D141FD /* foodPlaceCell.swift in Sources */,
 				7A4A3A8A27C8CD6600E0F6E0 /* HomeScreenViewController.swift in Sources */,
 				7A4A3A7F27C7F04700E0F6E0 /* MembersInfo.swift in Sources */,
-				7A4A3A8C27C8CE0100E0F6E0 /* PlaceReviewsViewController.swift in Sources */,
 				7A6FC64B27D5726700DA36A5 /* logInViewController.swift in Sources */,
 				7AE6E56827C5586200438EB3 /* AppDelegate.swift in Sources */,
 				7AEB701227D5AC0F00EF870B /* registerViewController.swift in Sources */,
 				7A4A3A8F27C8D61D00E0F6E0 /* Constants.swift in Sources */,
 				7AE6E56A27C5586200438EB3 /* SceneDelegate.swift in Sources */,
+				7AFFD1F32828EDDB009648D2 /* reviewTableViewCell.swift in Sources */,
 				7A6FC64927D561B100DA36A5 /* welcomeViewController.swift in Sources */,
 				7ACE371427C5A611006623B3 /* restaurantClass.swift in Sources */,
 				7A4A3A8027C7F04700E0F6E0 /* reviewClass.swift in Sources */,

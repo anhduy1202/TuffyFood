@@ -16,7 +16,10 @@ class PlaceDetailViewController: UIViewController {
     var rating: String?
     var email: String = ""
     var ref: DatabaseReference?
+    var reviewRef: DatabaseReference?
+    var reviews: [Reviews] = []
  
+    @IBOutlet weak var reviewTableView: UITableView!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBAction func ratingOnSlide(_ sender: UISlider) {
         ratingLabel.text = "\(String(round(ratingSlider.value))) / 5"
@@ -75,12 +78,30 @@ class PlaceDetailViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        reviewTableView.dataSource = self
+        reviewTableView.register(UINib(nibName: Constants.Storyboard.reviewNibName, bundle: nil), forCellReuseIdentifier: Constants.Storyboard.reviewCell)
         self.ref = Database.database().reference().child("foodPlaces").child((placeData?.title)!).child("reviews").childByAutoId()
-        closeButton.isHidden = true
-        reviewField.isHidden = true
-        ratingSlider.isHidden = true
-        ratingLabel.isHidden = true
-        submitReviewBtn.isHidden = true
+        self.reviewRef = Database.database().reference().child("foodPlaces").child((placeData?.title)!).child("reviews")
+        
+        reviewRef?.observeSingleEvent(of: .value, with: { (snapshot) in if let allReviews = snapshot.value as? [String:Any] {
+            for (_,value) in allReviews {
+                if let review = value as? [String:Any] {
+                    let newReviews = Reviews(author: review["author"]! as! String , content: review["content"]! as! String, rating: review["rating"]! as! String)
+                    self.reviews.append(newReviews)
+                    
+                    DispatchQueue.main.async {
+                        //Update data
+                        self.reviewTableView.reloadData()
+                    }
+                }
+            }
+        }});
+        openButton.isHidden = true
+        closeButton.isHidden = false
+        reviewField.isHidden = false
+        ratingSlider.isHidden = false
+        ratingLabel.isHidden = false
+        submitReviewBtn.isHidden = false
         star1.isHidden = true
         star2.isHidden = true
         star3.isHidden = true
@@ -148,3 +169,19 @@ extension UIImageView {
      
     }
 }
+
+extension PlaceDetailViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return reviews.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reviewCell", for: indexPath) as! reviewTableViewCell
+        print(reviews[indexPath.row].rating!)
+        cell.reviewAuthor.text = reviews[indexPath.row].author
+        cell.reviewContent.text = reviews[indexPath.row].content
+        cell.rating.text = "\(reviews[indexPath.row].rating ?? "5") ⭐️"
+        return cell
+    }
+}
+

@@ -2,24 +2,13 @@ import Foundation
 
 class Reviews {
 
-    var name: String
-    var comment: String
-    var rating: String
-    var anonymousCheck: Bool
-    var review: String
+    var author: String?
+    var content: String?
+    var rating: String?
     
-    init(name: String, comment: String, rating: String, anonymousCheck: Bool) {
-        self.name = name
-        self.comment = comment
+    init(author: String, content: String, rating: String) {
+        self.author = author
+        self.content = content
         self.rating = rating
-        self.anonymousCheck = anonymousCheck
-        if anonymousCheck == true {
-            self.name = "Anonymous"
-        }
-        self.review = "\(name) gives a \(rating) rating and says \(comment)"
-    }
-    
-    func displayReview() {
-        print(review)
     }
 }
